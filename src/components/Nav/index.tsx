@@ -17,7 +17,7 @@ const Nav = () => {
             <Text fontWeight="bold" marginLeft="10px" color="white">PocketForecast</Text>
         </Box>
 
-        <Box display="flex" alignItems="center" spacing={2}>
+        <Box display="flex" alignItems="center">
             <Text marginRight="70px" fontWeight="bold" color="white">About</Text>
             <Text marginRight="70px" fontWeight="bold" color="white">Pricing</Text>
             <Text fontWeight="bold" marginRight="70px" color="white">Support</Text>
