@@ -12,6 +12,7 @@ import {
 import { CheckCircleIcon } from '@chakra-ui/icons'
 import Nav from '@/components/Nav';
 import Spline from '@splinetool/react-spline';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -162,14 +163,18 @@ export default function Home() {
 
         </Box>
 
-        <Box display="flex" alignItems="center" justifyContent="center" marginTop="80px">
+        <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center" marginTop="80px" marginBottom="90px">
           <Box>
             <Text fontSize={25} fontWeight="bold" width="350px" marginBottom="15px">Subscribe to our Newsletter</Text>
-            <Text>Sign up to get weekly updates and news</Text>
           </Box>
-          <Input width="300px" placeholder='Email' />
-          <Button bg="#BCE784">Subscribe</Button>
+          <Text>Sign up to get weekly updates and news</Text>
+          <Box display="flex" alignItems="center" justifyContent="center" marginTop="15px">
+            <Input width="300px" placeholder='Email' />
+            <Button bg="#BCE784">Subscribe</Button>
+          </Box>
+
         </Box>
+        <Footer></Footer>
       </main>
     </ChakraProvider>
   )
